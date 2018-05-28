@@ -19,10 +19,12 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="windows 10去除快捷方式箭头1桌面空白处新建 文本文档 2打开将如下代码粘贴到其中 1234567891011reg add &amp;quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&amp;quot; /v 29 /d &amp;quot;%systemroot%\system32\i">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2018/05/25/windows10-去除桌面快捷方式箭头/1.jpg">
 <meta property="og:updated_time" content="2018-05-28T10:58:05.381Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="windows10 去除桌面快捷方式箭头">
 <meta name="twitter:description" content="windows 10去除快捷方式箭头1桌面空白处新建 文本文档 2打开将如下代码粘贴到其中 1234567891011reg add &amp;quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&amp;quot; /v 29 /d &amp;quot;%systemroot%\system32\i">
+<meta name="twitter:image" content="http://yoursite.com/2018/05/25/windows10-去除桌面快捷方式箭头/1.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -134,7 +136,7 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <img src="/2018/05/25/windows10-去除桌面快捷方式箭头/1.jpg">
 <h1 id="windows-10去除快捷方式箭头"><a href="#windows-10去除快捷方式箭头" class="headerlink" title="windows 10去除快捷方式箭头"></a>windows 10去除快捷方式箭头</h1><h4 id="1"><a href="#1" class="headerlink" title="1"></a>1</h4><p>桌面空白处新建 文本文档</p>
 <h4 id="2"><a href="#2" class="headerlink" title="2"></a>2</h4><p>打开将如下代码粘贴到其中</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /d &quot;%systemroot%\system32\imageres.dll,197&quot; /t reg_sz /f</span><br><span class="line"></span><br><span class="line">　　taskkill /f /im explorer.exe</span><br><span class="line"></span><br><span class="line">　　attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;</span><br><span class="line"></span><br><span class="line">　   del &quot;%userprofile%\AppData\Local\iconcache.db&quot; /f /q</span><br><span class="line"></span><br><span class="line">　　start explorer</span><br><span class="line"></span><br><span class="line">　　pause</span><br></pre></td></tr></table></figure>
