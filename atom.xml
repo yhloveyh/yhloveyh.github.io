@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-29T00:05:38.203Z</updated>
+  <updated>2018-06-02T14:36:43.674Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Office 下载和激活</title>
+    <link href="http://yoursite.com/2018/06/02/Office-%E4%B8%8B%E8%BD%BD%E5%92%8C%E6%BF%80%E6%B4%BB/"/>
+    <id>http://yoursite.com/2018/06/02/Office-下载和激活/</id>
+    <published>2018-06-02T14:31:30.000Z</published>
+    <updated>2018-06-02T14:36:43.674Z</updated>
+    
+    <content type="html"><![CDATA[<p>用于下载和激活 office 的软件，下载安装激活直接搞定。</p><a id="more"></a><p>首先下载 <a href="https://github.com/yhloveyh/foxinbox.github.io/blob/master/OTool.zip" target="_blank" rel="noopener">OTool</a> 软件</p><p>下载后解压到任意磁盘，确认磁盘有 5g 以上空间。</p><p>运行 <code>Office Tool Plus.exe</code> </p><p>下载界面选择好 语言 版本 系统位数</p><p>安装</p><p>安装完毕后激活</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;用于下载和激活 office 的软件，下载安装激活直接搞定。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="工具" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>七张好看的图</title>
@@ -84,13 +104,13 @@
     <link href="http://yoursite.com/2018/05/25/windows10-%E5%8E%BB%E9%99%A4%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%E7%AE%AD%E5%A4%B4/"/>
     <id>http://yoursite.com/2018/05/25/windows10-去除桌面快捷方式箭头/</id>
     <published>2018-05-25T04:07:13.000Z</published>
-    <updated>2018-05-29T00:04:50.451Z</updated>
+    <updated>2018-06-02T14:38:18.960Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="windows-10去除快捷方式箭头"><a href="#windows-10去除快捷方式箭头" class="headerlink" title="windows 10去除快捷方式箭头"></a>windows 10去除快捷方式箭头</h1><a id="more"></a><h4 id="1"><a href="#1" class="headerlink" title="1"></a>1</h4><p>桌面空白处新建 文本文档</p><h4 id="2"><a href="#2" class="headerlink" title="2"></a>2</h4><p>打开将如下代码粘贴到其中</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /d &quot;%systemroot%\system32\imageres.dll,197&quot; /t reg_sz /f</span><br><span class="line"></span><br><span class="line">　　taskkill /f /im explorer.exe</span><br><span class="line"></span><br><span class="line">　　attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;</span><br><span class="line"></span><br><span class="line">　   del &quot;%userprofile%\AppData\Local\iconcache.db&quot; /f /q</span><br><span class="line"></span><br><span class="line">　　start explorer</span><br><span class="line"></span><br><span class="line">　　pause</span><br></pre></td></tr></table></figure><p>Ctrl + s 保存</p><h4 id="3"><a href="#3" class="headerlink" title="3"></a>3</h4><p>修改文本文档格式 </p><p>打开 <code>此电脑</code>选择 <code>查看</code>将 <code>文件拓展名</code>勾选</p><p>将创建的 <code>txt</code>文档修改为 <code>bat</code></p><h4 id="4"><a href="#4" class="headerlink" title="4"></a>4</h4><p>右键 <code>以管理员身份运行</code></p><p>黑屏一下快捷方式箭头就没了</p>]]></content>
+    <content type="html"><![CDATA[<p>win10 桌面软件的快捷方式很丑，下面是去掉的方法。</p><a id="more"></a><h4 id="1"><a href="#1" class="headerlink" title="1"></a>1</h4><p>桌面空白处新建 文本文档</p><h4 id="2"><a href="#2" class="headerlink" title="2"></a>2</h4><p>打开将如下代码粘贴到其中</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /d &quot;%systemroot%\system32\imageres.dll,197&quot; /t reg_sz /f</span><br><span class="line"></span><br><span class="line">　　taskkill /f /im explorer.exe</span><br><span class="line"></span><br><span class="line">　　attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;</span><br><span class="line"></span><br><span class="line">　   del &quot;%userprofile%\AppData\Local\iconcache.db&quot; /f /q</span><br><span class="line"></span><br><span class="line">　　start explorer</span><br><span class="line"></span><br><span class="line">　　pause</span><br></pre></td></tr></table></figure><p>Ctrl + s 保存</p><h4 id="3"><a href="#3" class="headerlink" title="3"></a>3</h4><p>修改文本文档格式 </p><p>打开 <code>此电脑</code>选择 <code>查看</code>将 <code>文件拓展名</code>勾选</p><p>将创建的 <code>txt</code>文档修改为 <code>bat</code></p><h4 id="4"><a href="#4" class="headerlink" title="4"></a>4</h4><p>右键 <code>以管理员身份运行</code></p><p>黑屏一下快捷方式箭头就没了</p>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;windows-10去除快捷方式箭头&quot;&gt;&lt;a href=&quot;#windows-10去除快捷方式箭头&quot; class=&quot;headerlink&quot; title=&quot;windows 10去除快捷方式箭头&quot;&gt;&lt;/a&gt;windows 10去除快捷方式箭头&lt;/h1&gt;
+      &lt;p&gt;win10 桌面软件的快捷方式很丑，下面是去掉的方法。&lt;/p&gt;
     
     </summary>
     
